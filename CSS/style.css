@@ -1,6 +1,7 @@
 .container{
 	width: 1170px;
 	margin: 0 auto;
+	margin-bottom: 200px;
 
 }
 
@@ -36,3 +37,23 @@
 	transform:translate(-50%,-50%)rotate(45deg);
 
 }
+
+.ball{
+	width: 200px;
+	height: 200px;
+	background-color: purple;
+	border-radius: 50%;
+	position: relative;
+
+	
+  animation:  jump 3s 1s ease-in-out alternate infinite; 
+}
+
+  @keyframes jump{
+
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+   }
